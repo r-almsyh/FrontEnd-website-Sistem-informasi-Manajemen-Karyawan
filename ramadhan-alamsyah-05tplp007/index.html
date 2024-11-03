@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="Font Awesome/css/all.css" />
+    <style type="text/css">
+      body {
+        display: block;
+      }
+      .btn-m {
+        padding-top: 20px;
+        margin-left: 270px;
+        position: absolute;
+        transition: margin-left 0.3s ease;
+      }
+      .btn-m button {
+        padding: 10px;
+        background: #222;
+        border: none;
+        border-radius: 5px;
+      }
+      .btn-m img {
+        width: 30px;
+      }
+      #nav {
+        margin-left: 0px;
+        transition: margin-left 0.3s ease;
+      }
+      #konten {
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar" id="nav">
+      <h2>Katarina.Merch</h2>
+
+      <div class="profile" style="flex-direction: column">
+        <img
+          src="img/6852d55512fabab653e4607ff42ba75b.jpg"
+          alt="Foto Profil"
+          class="profile-picture"
+        />
+        <div class="profile-info">
+          <div class="welcome">Selamat Datang, Ramadhan Alamsyah</div>
+          <div class="role">Administrator</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <h3>Menu Karyawan</h3>
+        <a href="karyawan.html"
+          ><i class="fa-solid fa-users-viewfinder"></i>Data Karyawan</a
+        >
+        <a href="jabatan.html"
+          ><i class="fa-solid fa-user-tag"></i>Data Jabatan</a
+        >
+        <a href="divisi.html"
+          ><i class="fa-solid fa-users-between-lines"></i>Data Divisi</a
+        >
+        <h3>Menu Absensi</h3>
+        <a href="absensi.html"><i class="fa-solid fa-user-check"></i>Absensi</a>
+        <a href="izin.html"><i class="fa-solid fa-user-pen"></i>Izin</a>
+        <a href="lembur.html"><i class="fa-solid fa-user-clock"></i>Lembur</a>
+        <h3>Menu Penggajian</h3>
+        <a href="penggajian.html"
+          ><i class="fa-solid fa-money-check-dollar"></i>Penggajian</a
+        >
+      </nav>
+    </div>
+
+    <div class="btn-m" id="mnu">
+      <button onclick="tombol()"><img src="menu.png" /></button>
+    </div>
+
+    <div class="main-content" style="padding-top: 100px" id="konten">
+      <h1>Dashboard</h1>
+      <div class="stats">
+        <div class="stat-item">
+          <i class="fa-solid fa-users-viewfinder"></i>
+          <h3>Data Pegawai</h3>
+          <p>25</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-user-check"></i>
+          <h3>Absen Pegawai</h3>
+          <h3 id="tanggal-absensi"></h3>
+          <p>23</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-user-pen"></i>
+          <h3>Izin Pegawai</h3>
+          <p>3</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-user-clock"></i>
+          <h3>Lembur Pegawai</h3>
+          <p>7</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function tombol() {
+      var btn = document.getElementById("mnu");
+      var konten = document.getElementById("konten");
+      var nav = document.getElementById("nav");
+
+      if (btn.style.marginLeft === "20px") {
+        btn.style.marginLeft = "270px";
+      } else {
+        btn.style.marginLeft = "20px";
+      }
+
+      if (konten.style.marginLeft === "20px") {
+        konten.style.marginLeft = "250px";
+      } else {
+        konten.style.marginLeft = "20px";
+      }
+
+      if (nav.style.marginLeft === "-250px") {
+        nav.style.marginLeft = "0px";
+      } else {
+        nav.style.marginLeft = "-250px";
+      }
+    }
+  </script>
+</html>

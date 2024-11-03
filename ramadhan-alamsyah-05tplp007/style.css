@@ -1,0 +1,454 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #d3d6f1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #261e9e;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+nav a i {
+  margin-right: 10px;
+  /* Menambahkan gaya untuk membuat ikon dan teks sejajar */
+  display: flex;
+  align-items: center; /* Rata tengah untuk ikon */
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .welcome {
+  font-weight: bold;
+}
+
+.sidebar .role {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk statistik di dashboard */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1);
+}
+
+.stat-item img.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.stat-item p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #141414;
+}
+
+/* Gaya untuk grafik di dashboard */
+.chart-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chart-section img.chart {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Gaya Konten Utama */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.chart-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chart {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  /* Sidebar tersembunyi secara default */
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    transform: translateX(-250px);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Tampilkan tombol toggle di layar kecil */
+  .toggle-btn {
+    display: block;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Konten utama bergeser saat sidebar terbuka */
+  .main-content {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+}
+
+/* Tambahan untuk tampilan tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Margin untuk memisahkan tabel dari elemen lain */
+}
+
+th,
+td {
+  border: 1px solid #2980b9; /* Warna biru untuk border tabel */
+  padding: 10px; /* Ruang di dalam sel tabel */
+  text-align: left; /* Teks rata kiri */
+}
+
+th {
+  background-color: #2980b9; /* Warna latar belakang untuk header tabel */
+  color: white; /* Warna teks untuk header tabel */
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1; /* Warna latar belakang untuk baris genap */
+}
+
+tr:hover {
+  background-color: #bdc3c7; /* Warna latar belakang saat baris dihover */
+  cursor: pointer; /* Ubah kursor saat hover */
+}
+
+tfoot {
+  background-color: #2980b9; /* Warna latar belakang untuk footer tabel */
+  color: white; /* Warna teks untuk footer tabel */
+}
+
+tfoot td {
+  font-weight: bold; /* Teks footer menjadi tebal */
+}
+
+/* CSS untuk tombol menu dan sidebar */
+
+#menu-checkbok {
+  display: none;
+}
+
+#menu-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+
+#hamburger::before,
+#hamburger::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+#hamburger::before {
+  top: -6px;
+}
+
+#hamburger::after {
+  top: 6px;
+}
+
+/* Sidebar muncul ketika checkbox aktif */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#menu-checkbok:checked ~ .sidebar {
+  transform: translateX(0);
+}
+
+/* Responsif: Sidebar hanya menampilkan ikon */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar .menu-text {
+    display: none; /* Hanya tampilkan ikon */
+  }
+}
+
+/* CSS untuk sidebar dan tombol hamburger */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  padding-top: 20px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: #ddd;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar nav a i {
+  margin-right: 10px;
+}
+
+.sidebar nav a:hover {
+  background-color: #333;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s ease;
+}
+
+#mmenu-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#menu-checkbok {
+  display: none;
+}
+
+#menu-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+
+#hamburger::before,
+#hamburger::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+#hamburger::before {
+  top: -6px;
+}
+
+#hamburger::after {
+  top: 6px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+
+  .main-content {
+    margin-left: 250px;
+    width: 100%;
+  }
+
+  #menu-checkbok:checked ~ .sidebar {
+    transform: translateX(0);
+  }
+
+  #menu-checkbok:checked ~ .main-content {
+    margin-left: 250px;
+  }
+}

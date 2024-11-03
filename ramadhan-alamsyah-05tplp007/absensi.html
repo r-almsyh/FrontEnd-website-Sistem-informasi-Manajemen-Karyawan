@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Absensi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="Font Awesome/css/all.css" />
+    <style type="text/css">
+      body {
+        display: block;
+      }
+      .btn-m {
+        padding-top: 20px;
+        margin-left: 270px;
+        position: absolute;
+        transition: margin-left 0.3s ease;
+      }
+      .btn-m button {
+        padding: 10px;
+        background: #222;
+        border: none;
+        border-radius: 5px;
+      }
+      .btn-m img {
+        width: 30px;
+      }
+      #nav {
+        margin-left: 0px;
+        transition: margin-left 0.3s ease;
+      }
+      #konten {
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar" id="nav">
+      <h2>Katarina.Merch</h2>
+
+      <div class="profile" style="flex-direction: column">
+        <img
+          src="img/6852d55512fabab653e4607ff42ba75b.jpg"
+          alt="Foto Profil"
+          class="profile-picture"
+        />
+        <div class="profile-info">
+          <div class="welcome">Selamat Datang, Ramadhan Alamsyah</div>
+          <div class="role">Administrator</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <h3>Menu Karyawan</h3>
+        <a href="karyawan.html"
+          ><i class="fa-solid fa-users-viewfinder"></i>Data Karyawan</a
+        >
+        <a href="jabatan.html"
+          ><i class="fa-solid fa-user-tag"></i>Data Jabatan</a
+        >
+        <a href="divisi.html"
+          ><i class="fa-solid fa-users-between-lines"></i>Data Divisi</a
+        >
+        <h3>Menu Absensi</h3>
+        <a href="absensi.html"><i class="fa-solid fa-user-check"></i>Absensi</a>
+        <a href="izin.html"><i class="fa-solid fa-user-pen"></i>Izin</a>
+        <a href="lembur.html"><i class="fa-solid fa-user-clock"></i>Lembur</a>
+        <h3>Menu Penggajian</h3>
+        <a href="penggajian.html"
+          ><i class="fa-solid fa-money-check-dollar"></i>Penggajian</a
+        >
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <h1>Data Absensi</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Karyawan</th>
+            <th>Tanggal</th>
+            <th>Waktu Masuk</th>
+            <th>Waktu Keluar</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ocon Sempak</td>
+            <td>2024-11-02</td>
+            <td>08:00</td>
+            <td>16:00</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Herlina Cantik</td>
+            <td>2024-11-02</td>
+            <td>08:05</td>
+            <td>16:10</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Faiz Speed</td>
+            <td>2024-11-02</td>
+            <td>08:20</td>
+            <td>16:20</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Eldang Sing</td>
+            <td>2024-11-02</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Izin</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Bintang Kaciw</td>
+            <td>2024-11-02</td>
+            <td>08:15</td>
+            <td>16:15</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Nasihue</td>
+            <td>2024-11-02</td>
+            <td>09:00</td>
+            <td>17:00</td>
+            <td>Terlambat</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Agus Lapar Bu</td>
+            <td>2024-11-02</td>
+            <td>08:30</td>
+            <td>16:30</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Sas Pemalas</td>
+            <td>2024-11-02</td>
+            <td>09:10</td>
+            <td>17:10</td>
+            <td>Terlambat</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Azka Spiding</td>
+            <td>2024-11-02</td>
+            <td>08:45</td>
+            <td>16:45</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Habib Syeh</td>
+            <td>2024-11-02</td>
+            <td>08:50</td>
+            <td>16:50</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Alva Kaciw</td>
+            <td>2024-11-02</td>
+            <td>08:00</td>
+            <td>16:00</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Sandi Pasword</td>
+            <td>2024-11-02</td>
+            <td>08:15</td>
+            <td>16:15</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Wandi Hibur</td>
+            <td>2024-11-02</td>
+            <td>08:30</td>
+            <td>16:30</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Budi Gendut</td>
+            <td>2024-11-02</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Izin</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Rina Ceria</td>
+            <td>2024-11-02</td>
+            <td>08:25</td>
+            <td>16:25</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Dina Kasar</td>
+            <td>2024-11-02</td>
+            <td>09:05</td>
+            <td>17:05</td>
+            <td>Terlambat</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Rizki Jomblo</td>
+            <td>2024-11-02</td>
+            <td>08:15</td>
+            <td>16:15</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Feri Baper</td>
+            <td>2024-11-02</td>
+            <td>08:45</td>
+            <td>16:45</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Agung Cukup</td>
+            <td>2024-11-02</td>
+            <td>09:00</td>
+            <td>17:00</td>
+            <td>Terlambat</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Rendy Ngakak</td>
+            <td>2024-11-02</td>
+            <td>08:00</td>
+            <td>16:00</td>
+            <td>Hadir</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Indah Kecil</td>
+            <td>2024-11-02</td>
+            <td>08:10</td>
+            <td>16:10</td>
+            <td>Hadir</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

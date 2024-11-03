@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Divisi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Font Awesome/css/all.css" />
+    <style type="text/css">
+      body {
+        display: block;
+      }
+      .btn-m {
+        padding-top: 20px;
+        margin-left: 270px;
+        position: absolute;
+        transition: margin-left 0.3s ease;
+      }
+      .btn-m button {
+        padding: 10px;
+        background: #222;
+        border: none;
+        border-radius: 5px;
+      }
+      .btn-m img {
+        width: 30px;
+      }
+      #nav {
+        margin-left: 0px;
+        transition: margin-left 0.3s ease;
+      }
+      #konten {
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar" id="nav">
+      <h2>Katarina.Merch</h2>
+
+      <div class="profile" style="flex-direction: column">
+        <img
+          src="img/6852d55512fabab653e4607ff42ba75b.jpg"
+          alt="Foto Profil"
+          class="profile-picture"
+        />
+        <div class="profile-info">
+          <div class="welcome">Selamat Datang, Ramadhan Alamsyah</div>
+          <div class="role">Administrator</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <h3>Menu Karyawan</h3>
+        <a href="karyawan.html"
+          ><i class="fa-solid fa-users-viewfinder"></i>Data Karyawan</a
+        >
+        <a href="jabatan.html"
+          ><i class="fa-solid fa-user-tag"></i>Data Jabatan</a
+        >
+        <a href="divisi.html"
+          ><i class="fa-solid fa-users-between-lines"></i>Data Divisi</a
+        >
+        <h3>Menu Absensi</h3>
+        <a href="absensi.html"><i class="fa-solid fa-user-check"></i>Absensi</a>
+        <a href="izin.html"><i class="fa-solid fa-user-pen"></i>Izin</a>
+        <a href="lembur.html"><i class="fa-solid fa-user-clock"></i>Lembur</a>
+        <h3>Menu Penggajian</h3>
+        <a href="penggajian.html"
+          ><i class="fa-solid fa-money-check-dollar"></i>Penggajian</a
+        >
+      </nav>
+    </div>
+
+
+
+      <!-- Sidebar sama seperti di index.html -->
+    </div>
+    <div class="main-content">
+      <h1>Data Divisi</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Divisi</th>
+            <th>Jumlah Karyawan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HR</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>IT</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Finance</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Marketing</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
